@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1), -1px -1px 1px rgba(0,0,0,0.01);
+}
+
+body {
+	background-color: whitesmoke;
+	font-size: 1.5em;
+	font-family: Helvetica, arial, sans-serif;
+	color:black;
+}
+
+.container {
+	font-size: 1.5em;
+	background-color: #55ACEE;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	width: 60%;
+	max-width: 800px;
+	height: auto;
+	max-height: 800px;
+}
+
+#question {
+	font-size: 1em;
+	padding-top: 0.25em;
+	padding-left: 0.5em;
+	position: relative;
+}
+
+#ask {
+	font-size: 0.75em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	position: relative;
+}
+
+#asktext {
+    text-align: center;
+    border-radius: 0.25em;
+	font-size: 0.75em;
+}
+
+#askbutton, #explainbutton {
+	text-align: center;
+	border-radius: 0.25em;
+	font-size: 0.75em;
+	margin-top: 0.25em;
+	padding: 0.25em 0.25em;
+	vertical-align: middle;
+}
+
+#explainbutton {
+	font-size: 0.375em;
+	margin-top: 0;
+}
+
+#result {
+	display: none;
+	font-size: 1em;
+	background-color: #ccd6dd;
+	text-align: center;
+	height: auto;
+	margin: 0.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.25em;
+	padding-bottom: 0;
+	position: relative;
+}
+
+#chart {
+	display: none;
+	position: relative;
+	background-color: #ccd6dd;
+	max-height: 600px;
+}
+
+#label {
+	display: none;
+	position: relative;
+	background-color: #ccd6dd;
+}
+
+#explain {
+	display: none;
+	position: relative;
+	background-color: #ccd6dd;
+}
+
+#error {
+	display: none;
+	position: relative;
+	background-color: #ccd6dd;
+	font-size: 0.5em;
+	color: red;
+}
+
+#explanation {
+	display: none;
+	position: relative;
+	background-color: #ccd6dd;
+	font-size: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+#footer {
+	text-align: center;
+	position: relative;
+	font-size: 0.375em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#footer a{
+	color: black;
+}
+
+.valid {
+	background-color: white;
+}
+
+.invalid{
+	background-color: red;
+	background-color: rgba(255,0,0,0.75);
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+/* Media Queries */
+/* Switch when Viewport width below 1024px*/
+@media (max-width: 1024px) {
+	body {
+		font-size: 1.125em;
+	}
+	
+	/*.container {
+	
+	}
+
+	#result {
+		max-height: 600px;
+	}
+	
+	#chart {
+		max-height: 400px;
+	}*/
+}
+
+/* Switch when Viewport width below 480px*/
+@media (max-width: 480px){
+	body {
+		font-size: 1em;
+	}
+
+	/*.container {
+		/*min-width: 200px;
+		/*min-height: 400px;
+		max-height: 600px;
+	}
+
+	#result {
+		max-height: 200px;
+	}
+
+	#chart {
+		max-height: 200px;
+	}*/
+}
